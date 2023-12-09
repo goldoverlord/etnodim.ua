@@ -13,8 +13,8 @@
     --fs-7: 14rem;
     --fs-8: 12rem;
 
-    --gap: 40rem;
-    --gap-: -40rem;
+    --gap: 20rem;
+    --gap-: -20rem;
 
     --offset: 10rem;
     --offset-: -10rem;
@@ -292,9 +292,38 @@ h6,
 
 .container {
     width: 100%;
-    max-width: 1580rem;
+    max-width: 1320rem;
     margin: 0 auto;
     padding: 0 var(--gap);
+}
+
+.one-page {
+    align-self: center;
+    position: absolute;
+    top: 0;
+    left: -38rem;
+    right: 0;
+    width: 1440rem;
+    height: 7264rem;
+    margin: 0 auto;
+}
+
+.one-page picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+
+.one-page img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .u-box {
@@ -723,17 +752,30 @@ h6,
 }
 
 .drop-box {
-    transform: scaleY(1);
+    transform: scaleY(1) translateX(-50%);
     transition: all .4s;
-    background-color: var(--color-white);
     position: absolute;
     width: 100%;
-    height: 100vh;
+    max-width: 1320rem;
+    padding: 30rem var(--gap);
     top: 100%;
-    left: 0;
-    padding: 0 var(--gap);
+    left: 50%;
+    align-self: center;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    z-index: 20;
+}
+
+.drop-box:after {
+    background-color: var(--color-white);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
 }
 
 .drop-box .show {
@@ -746,8 +788,8 @@ h6,
     display: flex;
     flex-grow: 1;
     height: 100%;
-    justify-content: space-between;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 30rem 0;
     margin-right: 104rem;
 }
@@ -773,6 +815,7 @@ h6,
     list-style-type: none;
     padding: 0;
     margin: 0;
+    min-width: 170rem;
 }
 
 .drop-box__main-list {
@@ -783,10 +826,19 @@ h6,
 }
 
 .drop-box__link {
+    display: block;
+    width: 100%;
+    text-align: left;
     font-size: var(--fs-7);
     color: var(--color-black);
-    line-height: normal;
+    line-height: 1.6;
     font-weight: 300;
+    transition: all .4s;
+}
+
+.drop-box__link:hover {
+    color: #DA1F39;
+    font-weight: 700;
 }
 
 .drop-box__list {}
@@ -794,10 +846,13 @@ h6,
 .drop-box__picture {
     flex: 0 0 16.666666%;
     margin-top: 16rem;
-    padding-bottom: 80%;
 }
 
-.drop-box__img {}
+.drop-box__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 
 /* site
@@ -818,6 +873,8 @@ h6,
     position: sticky;
     top: 0;
     left: 0;
+    opacity: .4;
+    height: 99rem;
 }
 
 .header__container {
@@ -835,7 +892,15 @@ h6,
     align-items: center;
 }
 
-.header__logo {}
+.header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 184rem;
+    height: 48rem;
+    z-index: 1000;
+}
 
 .header__nav {}
 
