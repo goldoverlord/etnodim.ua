@@ -577,7 +577,7 @@ h6,
             vertical-align: middle;
             position: absolute;
             top: 50%;
-            left: calc(100% + 2rem);
+            left: calc(100% + 0rem);
             transform: translate(-50%,-50%);
             width: 16rem;
             height: 16rem;
@@ -944,13 +944,19 @@ h6,
     align-items: center;
 }
 
-.header__action > .header__action-el:not(:last-child) {
-    margin-right: 20rem;
+.header__action > .header__action-el:not(:first-child) {
+    margin-left: 24rem;
 }
 
 .header__action-el {
     display: inline-flex;
     align-items: center;
+}
+
+.header__action-el--
+
+.header__action-el--basket {
+    margin-left: 10rem !important;
 }
 
 .header__action-search {}
