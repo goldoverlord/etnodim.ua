@@ -324,7 +324,7 @@ h6,
     left: 0;
     right: 0;
     width: 1440rem;
-    height: 7264rem;
+    height: 417rem;
     margin: 0 auto;
 }
 
@@ -781,7 +781,7 @@ h6,
 }
 
 .drop-box {
-    transform: scaleY(0) translateX(-50%);
+    transform: scaleY(1) translateX(-50%);
     transition: all .4s;
     position: absolute;
     width: 100%;
