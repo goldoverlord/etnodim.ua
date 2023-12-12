@@ -550,14 +550,15 @@ h6,
     color: #DA1F39;
  }
 
-.select-box:hover .select-box__icon {
-    /* fill: #DA1F39; */
-}
-
 .select-box__current {
     position: relative;
     cursor: pointer;
     outline: none;
+}
+
+.select-box:hover .select-box__icon,
+.select-box__current:hover .select-box__icon {
+     fill: #DA1F39;
 }
 
 .select-box__current:focus+.select-box__list {
@@ -757,6 +758,10 @@ h6,
     background-color: transparent;
 }
 
+.basket__btn:hover .basket__icon {
+    fill: #DA1F39;
+}
+
 .basket__icon {
     fill: var(--color-black);
     display: block;
@@ -765,6 +770,7 @@ h6,
     position: absolute;
     top: -4px;
     left: 0;
+    transition: all .4s;
 }
 
 .basket__marker {
