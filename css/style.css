@@ -837,7 +837,7 @@ h6,
 .main-list__link {
     font-size: var(--fs-5);
     color: #9A9A9A;
-    line-height: normal;
+    line-height: 1.5;
     font-family: var(--ff);
     text-transform: uppercase;
 }
