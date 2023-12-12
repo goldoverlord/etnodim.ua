@@ -950,18 +950,12 @@ h6,
 }
 
 .header__action > .header__action-el:not(:first-child) {
-    margin-left: 24rem;
+    margin-left: 20rem;
 }
 
 .header__action-el {
     display: inline-flex;
     align-items: center;
-}
-
-.header__action-el--
-
-.header__action-el--basket {
-    margin-left: 10rem !important;
 }
 
 .header__action-search {}
