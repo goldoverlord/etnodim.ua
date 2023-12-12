@@ -543,6 +543,7 @@ h6,
     display: block;
     font-size: 18px;
     color: var(--color-black);
+    z-index: 8000;
 }
 
  .select-box:hover .select-box__input-text {
