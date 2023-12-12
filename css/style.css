@@ -622,7 +622,7 @@ h6,
 }
 
 .select-box__list li {
-    padding: 0 4rem 0 4rem;
+    padding: 6rem 4rem 6rem 4rem;
     position: relative;
 }
 
@@ -912,7 +912,7 @@ h6,
     position: sticky;
     top: 0;
     left: 0;
-    opacity: 0.8;
+    opacity: 1;
     height: 99rem;
     display: flex;
     align-items: center;
