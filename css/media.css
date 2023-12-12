@@ -98,13 +98,31 @@
     transform: translateY(50%) rotate(45deg);
   }
   .header {
-    padding: 8rem 0;
+    height: 41rem;
+    padding: 8rem 10rem;
+  }
+  .header__mob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 41rem;
+    padding: 8rem 10rem;
+  }
+  .header__container {
+    justify-content: flex-end;
+    align-items: flex-start;
   }
   .header__logo {
     max-width: 95rem;
     flex-basis: 95rem;
     height: 25rem;
   }
+  .mb-none,
+  .header__dropdown-mb {
+    display: none;
+  }
+  .header__dropdown {}
   
 }
 

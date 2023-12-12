@@ -152,7 +152,8 @@ body.is-menu-show .site__header .toggles__toggle:nth-child(3) {
 
 body.is-menu-show .header {
     position: fixed;
-    height: 100%;
+    top: 0; 
+    left: 0;
     width: 100%;
     overflow: scroll;
 }
